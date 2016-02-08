@@ -1,0 +1,22 @@
+{
+  "name": "koa2_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klik1301/koa2_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klik1301/koa2_app/issues"
+  },
+  "homepage": "https://github.com/klik1301/koa2_app#readme",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.3"
+  }
+}
