@@ -11,6 +11,7 @@ const AuthController = require('./AuthController');
 
 
 Router.post('/login', AuthController.Login );
+Router.post('/Register', AuthController.Register );
 Router.get('/check', convert.compose(jwtMiddleware, AuthController.Check) );
 
 

@@ -10,4 +10,4 @@ mongoose.connection.on('disconnected', function(){
     console.log("mongoose disconnected");
 });
 
-exports.mongoose = mongoose;
+module.exports = mongoose;
