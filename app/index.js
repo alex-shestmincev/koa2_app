@@ -9,6 +9,7 @@ const koaQs = require('koa-qs');
 const mount = require('koa-mount');
 const UserModule = require('./modules/user');
 
+const perfMeasureMdlw = require('./middlewares/perfMeasure');
 const bodyParser = require('./middlewares/bodyParser');
 const errorHandler = require('./middlewares/errorHandler');
 const notFoundMiddleware = require('./middlewares/notFound');
@@ -16,6 +17,7 @@ const saveHostUrlMdlw = require('./middlewares/saveHostUrl');
 
 const app = new Koa();
 
+app.use(perfMeasureMdlw);
 app.use(errorHandler);
 app.use(convert(cors()));
 koaQs(app);
